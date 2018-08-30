@@ -4,7 +4,7 @@ class NavIcon extends React.Component {
     render() {
         let icons = Object.values(this.props);
         let icon = icons[0];
-        console.log(icon); 
+       
         switch (icon) {
             case 'FlowerIcon':
                 return <FlowerIcon/>
