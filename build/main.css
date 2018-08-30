@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', serif;
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: white;
+  background-repeat: no-repeat; }
+
+.box {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 420px; }
+
+.header {
+  background-image: linear-gradient(0, #e4e46d, #5beb5b); }
+  .header__title {
+    line-height: 100px; }
+
+.content {
+  padding-top: 30px; }
+  .content__title {
+    margin-bottom: 20px; }
+  .content__photo {
+    width: 100%;
+    min-height: 180px;
+    background-image: linear-gradient(180deg, yellow, orange);
+    margin-bottom: 20px; }
+    .content__photo_Cart {
+      background: green; }
+    .content__photo_Spoon {
+      background: red; }
+    .content__photo_Flower {
+      background-image: linear-gradient(180deg, yellow, orange); }
+    .content__photo_Stadium {
+      background: orange; }
+    .content__photo_small {
+      width: 50px;
+      min-height: 50px;
+      margin: 0 auto; }
+  .content__text {
+    margin-bottom: 30px; }
+
+.nav {
+  display: block;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 5;
+  background-color: white;
+  padding: 10px 0; }
+  .nav__container {
+    width: 100%;
+    max-width: 315px;
+    margin: 0 auto; }
+  .nav__item {
+    width: 75px;
+    height: 75px;
+    display: inline-block; }
+    .nav__item .st0 {
+      fill-opacity: 0; }
+    .nav__item .st1 {
+      fill: none;
+      stroke: #333333;
+      stroke-width: 2; }
+    .nav__item .st2 {
+      fill: #333333; }
+
+#flower-icon .st0 {
+  fill-opacity: 0; }
+
+#flower-icon .st1 {
+  fill: white;
+  stroke: white; }
+
+#flower-icon .st2 {
+  fill: none;
+  stroke: #3B3B3B;
+  stroke-width: 2; }
+
+.nav__item_active #flower-icon .st1 {
+  stroke: #3B3B3B; }
+
+.nav__item_active .st0,
+.nav__item_active #flower-icon .st0 {
+  fill-opacity: 1;
+  fill: #3B3B3B; }
+
+.nav__item_active .st1,
+.nav__item_active #flower-icon .st1 {
+  stroke: white;
+  fill: #3B3B3B; }
+
+.nav__item_active .st2,
+.nav__item_active #flower-icon .st2 {
+  fill: white; }
+
