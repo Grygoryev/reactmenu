@@ -1,5 +1,5 @@
 {
-  "name": "todoapp",
+  "name": "reactmenu",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Grygoryev/todoapp.git"
+    "url": "git+https://github.com/Grygoryev/reactmenu.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Grygoryev/todoapp/issues"
+    "url": "https://github.com/Grygoryev/reactmenu/issues"
   },
-  "homepage": "https://github.com/Grygoryev/todoapp#readme",
+  "homepage": "https://github.com/Grygoryev/reactmenu#readme",
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.0.0-rc.3",
     "babel-cli": "^6.26.0",
