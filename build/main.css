@@ -84,9 +84,6 @@ body {
   stroke: #3B3B3B;
   stroke-width: 2; }
 
-.nav__item_active #flower-icon .st1 {
-  stroke: #3B3B3B; }
-
 .nav__item_active .st0,
 .nav__item_active #flower-icon .st0 {
   fill-opacity: 1;
@@ -100,4 +97,7 @@ body {
 .nav__item_active .st2,
 .nav__item_active #flower-icon .st2 {
   fill: white; }
+
+.nav__item_active #flower-icon .st1 {
+  stroke: #3B3B3B; }
 
