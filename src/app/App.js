@@ -8,10 +8,10 @@ export default class App extends Component {
         super(props);
         this.state = {
             tabs: [
-                {name: 'Cart', text: 'Etwas kekwas sekwas pekwas Etwas kekwas sekwas pekwas', id: 1, icon: 'CartIcon', isActive: false},
-                {name: 'Spoon', text: 'Esto Espresso Cofesto Milen Esto Espresso Cofesto Milen Esto Espresso Cofesto Milen ', id: 2, icon: 'SpoonIcon', isActive: false},
-                {name: 'Flower', text: 'Awesome Advanture Awesome Advanture Awesome Advanture Awesome Advanture Awesome Advanture', id: 3, icon: 'FlowerIcon', isActive: true}, 
-                {name: 'Stadium', text: 'Real pEkan goes right to be the rightest Real pEkan goes right to be the rightest', id: 4, icon: 'StadiumIcon', isActive: false }
+                {name: 'Cart', text: 'Welcome to your cart. Here you are able to see all products, which are ready to be paid and delievered to you. Just press the button to finish an order.', id: 1, icon: 'CartIcon', isActive: false},
+                {name: 'Spoon', text: 'In this section you are able to see the rating of most popular places in this area. Just scroll the feed and pay attention to the bar with small stars in it.', id: 2, icon: 'SpoonIcon', isActive: false},
+                {name: 'Flower', text: 'Welcome to the section of most popular culture places to visit in our city. Look at the feed and choose the most interesting place. For more information, just tap on place card.', id: 3, icon: 'FlowerIcon', isActive: true}, 
+                {name: 'Stadium', text: 'In case you are fun of sports, this application has also rating of most popular stadiums for different kinds of sports. To choose sport you need, tap on \'filter\' button. ', id: 4, icon: 'StadiumIcon', isActive: false }
             ]
         }
     }
