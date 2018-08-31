@@ -8,21 +8,17 @@ export default class App extends Component {
         super(props);
         this.state = {
             tabs: [
-                {name: 'Cart', text: 'Etwas kekwas sekwas pekwas Etwas kekwas sekwas pekwas', id: 1, icon: 'CartIcon', active: false},
-                {name: 'Spoon', text: 'Esto Espresso Cofesto Milen Esto Espresso Cofesto Milen Esto Espresso Cofesto Milen ', id: 2, icon: 'SpoonIcon', active: false},
-                {name: 'Flower', text: 'Awesome Advanture Awesome Advanture Awesome Advanture Awesome Advanture Awesome Advanture', id: 3, icon: 'FlowerIcon', active: true}, 
-                {name: 'Stadium', text: 'Real pEkan goes right to be the rightest Real pEkan goes right to be the rightest', id: 4, icon: 'StadiumIcon', active: false }
+                {name: 'Cart', text: 'Etwas kekwas sekwas pekwas Etwas kekwas sekwas pekwas', id: 1, icon: 'CartIcon', isActive: false},
+                {name: 'Spoon', text: 'Esto Espresso Cofesto Milen Esto Espresso Cofesto Milen Esto Espresso Cofesto Milen ', id: 2, icon: 'SpoonIcon', isActive: false},
+                {name: 'Flower', text: 'Awesome Advanture Awesome Advanture Awesome Advanture Awesome Advanture Awesome Advanture', id: 3, icon: 'FlowerIcon', isActive: true}, 
+                {name: 'Stadium', text: 'Real pEkan goes right to be the rightest Real pEkan goes right to be the rightest', id: 4, icon: 'StadiumIcon', isActive: false }
             ]
         }
     }
 
     handleNavClick = (id) => {
         const tabs = this.state.tabs;
-        for (let i = 0; i < tabs.length; i++ ) {
-            if (tabs[i].id == id) {
-                tabs[i].active = true;
-            } else tabs[i].active = false;
-        }
+        tabs.forEach(tab => tab.isActive = tab.id === id);
 
         this.setState({
             tabs

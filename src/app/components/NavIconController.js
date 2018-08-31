@@ -1,11 +1,11 @@
 import React from 'react';
 
-class NavIcon extends React.Component {
+class NavIconController extends React.Component {
     render() {
         let icons = Object.values(this.props);
-        let icon = icons[0];
+        let currentIcon = icons[0];
        
-        switch (icon) {
+        switch (currentIcon) {
             case 'FlowerIcon':
                 return <FlowerIcon/>
             case 'StadiumIcon':
@@ -15,12 +15,10 @@ class NavIcon extends React.Component {
             case 'SpoonIcon':
                 return <SpoonIcon/>
         }
-        return (
-    
-            <div> </div>
-        )
     }
 }
+
+export default NavIconController;
 
 const FlowerIcon = () => {
     return (
@@ -87,9 +85,3 @@ const SpoonIcon = () => {
         </svg>
     )
 }
-
-
-
-
-
-export default NavIcon
